@@ -26,6 +26,34 @@ A ideia é manter um backup versionado e facilitar a reinstalação em novos sis
 
 ---
 
+## Linguagens e Recursos Configurados
+
+| Linguagem                   | LSP                                                   | Diagnóstico / Linter | Formatador     | Debugger   | Outros Recursos             |
+| --------------------------- | ----------------------------------------------------- | -------------------- | -------------- | ---------- | --------------------------- |
+| **Lua**                     | `lua_ls`                                              | –                    | `stylua`       | –          | Treesitter (syntax, indent) |
+| **C / C++**                 | `clangd`                                              | –                    | `clang-format` | `codelldb` | Treesitter                  |
+| **JavaScript / TypeScript** | `tsserver` *(via Treesitter, sem LSP dedicado ainda)* | `eslint_d`           | `prettier`     | –          | Treesitter                  |
+| **HTML**                    | – *(Treesitter)*                                      | –                    | `prettier`     | –          | Treesitter                  |
+| **CSS**                     | – *(Treesitter)*                                      | –                    | `prettier`     | –          | Treesitter                  |
+
+### Atalhos Principais
+* __LSP__
+   * `K` → hover (documentação rápida)
+   * `gd` → ir para definição 
+   * `<leader>ca → code actions
+
+* __Formatação__
+   * `<leader>gf` → formatar arquivo com `null-ls`
+
+* __Telescope__
+   *`<C-p>` → buscar arquivo
+   *`<leader>fg` → live grep
+
+* __Neo-tree__
+   *`<C-n>` → abrir/fechar explorer
+
+---
+
 ## Instalação (__*Linux*__)
 
 Clone o repositório em sua máquina:
@@ -42,6 +70,8 @@ cp -r config-nvim ~/.config/nvim
 
 ```
 
+---
+
 ## Uso
 
 Abra o Neovim normalmente:
@@ -53,12 +83,16 @@ nvim
 
 Os plugins serão instalados automáticamente pelo **Lazy.nvim**
 
+---
+
 ## Backup e Fork
 
 Este repositório serve como meu **backup pessoal**.
 Se você quiser usar esta configuração, recomendo fazer um **fork** em vez de apenas copiar manualmente.
 
 Assim você terá sua própria versão, poderá customizá-la e ainda acompanhar eventuais mudanças que eu fizer aqui.
+
+---
 
 ## Backup Manual (**para uso pessoal**)
 
@@ -74,6 +108,8 @@ git commit -m "Atualizando config"
 git push
 
 ```
+
+---
 
 ## Licença 
 
