@@ -40,17 +40,17 @@ A ideia é manter um backup versionado e facilitar a reinstalação em novos sis
 * __LSP__
    * `K` → hover (documentação rápida)
    * `gd` → ir para definição 
-   * `<leader>ca → code actions
+   * `<leader>ca` → code actions
 
 * __Formatação__
    * `<leader>gf` → formatar arquivo com `null-ls`
 
 * __Telescope__
-   *`<C-p>` → buscar arquivo
-   *`<leader>fg` → live grep
+   * `<C-p>` → buscar arquivo
+   * `<leader>fg` → live grep
 
 * __Neo-tree__
-   *`<C-n>` → abrir/fechar explorer
+   * `<C-n>` → abrir/fechar explorer
 
 ---
 
