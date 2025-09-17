@@ -9,7 +9,7 @@ A ideia é manter um backup versionado e facilitar a reinstalação em novos sis
 
 - **init.lua** → arquivo principal de configuração  
 - **lua/** → contém os módulos com plugins e ajustes separados  
-- **plugin/** → configurações geradas automaticamente pelo gerenciador de plugins  
+- **plugins/** → contém a configuração de cada plugin separadamente
 
 ---
 
@@ -26,10 +26,55 @@ A ideia é manter um backup versionado e facilitar a reinstalação em novos sis
 
 ---
 
-## Instalação
+## Instalação (__*Linux*__)
 
 Clone o repositório em sua máquina:
 
-```bash
+```
 git clone https://github.com/seu-usuario/config-nvim.git
 
+```
+
+Depois copie para o local correto do Neovim:
+
+```
+cp -r config-nvim ~/.config/nvim
+
+```
+
+## Uso
+
+Abra o Neovim normalmente:
+
+```
+nvim
+
+```
+
+Os plugins serão instalados automáticamente pelo **Lazy.nvim**
+
+## Backup e Fork
+
+Este repositório serve como meu **backup pessoal**.
+Se você quiser usar esta configuração, recomendo fazer um **fork** em vez de apenas copiar manualmente.
+
+Assim você terá sua própria versão, poderá customizá-la e ainda acompanhar eventuais mudanças que eu fizer aqui.
+
+## Backup Manual (**para uso pessoal**)
+
+Sempre que atualizar sua configuração em ` ~/.config/nvim `, copie novamente para seu repositório local (o que foi criado a partir do git clone):
+
+```
+
+rm -rf ~/Projects/config-nvim
+cp -r ~/.config/nvim ~/Projects/config-nvim
+cd ~/Projects/config-nvim
+git add .
+git commit -m "Atualizando config"
+git push
+
+```
+
+## Licença 
+
+Este projeto está licenciado sob a [Licença MIT](./LICENSE). Sinta-se livre para fazer um **fork** ou usá-la como referência.
