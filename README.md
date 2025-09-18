@@ -52,6 +52,15 @@ A ideia é manter um backup versionado e facilitar a reinstalação em novos sis
 * __Neo-tree__
    * `<C-n>` → abrir/fechar explorer
 
+* __Debugging (DAP + codelldb)__
+   * `<leader>dt` → toggle breakpoint
+   * `<leader>dc` → continuar (run/continue)
+   * `<leader>do` → step over
+   * `<leader>di` → step into
+   * `<leader>du` → step out
+   * `<leader>dr` → abrir REPL
+   * `<leader>de` → encerrar debug
+
 ---
 
 ## Instalação (__*Linux*__)
