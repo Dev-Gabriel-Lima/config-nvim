@@ -15,6 +15,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.opt.number = true
 
+
 local opts = {}
   require("vim-options")
-  require("lazy").setup("plugins")
+  require("lazy").setup({
+  { import = "plugins" }
+})
